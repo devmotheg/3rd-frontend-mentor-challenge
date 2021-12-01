@@ -1,0 +1,146 @@
+/*!
+  @author Mohamed Muntasir
+  @link https://github.com/devmotheg
+  */
+
+/* General */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background: hsl(0, 0%, 95%);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 0;
+}
+
+/* Container */
+
+div:first-child {
+  width: 330px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) {
+  div:first-child {
+    width: 906px;
+    display: flex;
+  }
+}
+
+/* Sections */
+
+section {
+  padding: calc(50em / 16);
+}
+
+section:first-of-type {
+  background: hsl(31, 77%, 52%);
+}
+
+section:nth-of-type(2) {
+  background: hsl(184, 100%, 22%);
+}
+
+section:last-of-type {
+  background: hsl(179, 100%, 13%);
+}
+
+h2 {
+  display: block;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: calc(10em / 16);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: calc(42em / 16);
+}
+
+section h2::before {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 42px;
+  margin-bottom: calc(12em / 16);
+}
+
+section:first-of-type h2::before {
+  background: url("../images/icon-sedans.svg") no-repeat;
+}
+
+section:nth-of-type(2) h2::before {
+  background: url("../images/icon-suvs.svg") 100% no-repeat;
+}
+
+section:last-of-type h2::before {
+  background: url("../images/icon-luxury.svg") 100% no-repeat;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: calc(26em / 16);
+  line-height: 1.8em;
+}
+
+button {
+  background: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+  padding: calc(16em / 16) calc(40em / 16);
+  border-radius: 24px;
+  font-weight: 700;
+}
+
+section:first-of-type button {
+  color: hsl(31, 77%, 52%);
+}
+
+section:first-of-type button:hover {
+  color: hsl(0, 0%, 95%);
+  background: hsl(31, 77%, 52%);
+}
+
+section:nth-of-type(2) button {
+  color: hsl(184, 100%, 22%);
+}
+
+section:nth-of-type(2) button:hover {
+  color: hsl(0, 0%, 95%);
+  background: hsl(184, 100%, 22%);
+}
+
+section:last-of-type button {
+  color: hsl(179, 100%, 13%);
+}
+
+section:last-of-type button:hover {
+  color: hsl(0, 0%, 95%);
+  background: hsl(179, 100%, 13%);
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) {
+  p {
+    margin-bottom: calc(80em / 16);
+  }
+}
